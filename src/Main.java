@@ -52,5 +52,19 @@ public class Main {
                 System.out.print(numbers[t] + " ");
             } else System.out.print(numbers[t] + " ");
         }
+        System.out.println("\n");
+        //Task 5
+        int size = 3;
+        int[][] matrix = new int[size][size];
+        for(int i = 0; i<size; i++){
+            matrix[i][i] = 1;
+            matrix[i][size - i - 1] = 1;
+        }
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+
    }
-}
+}}
